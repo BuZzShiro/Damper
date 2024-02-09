@@ -56,6 +56,9 @@ Nav{
 	r:rgba(255,255,255,1);
 	float:left;
 }
+.PageLink{
+	margin:3px;
+}
 a.CopyIcon{
 	width:30px;
 	height:30px;

@@ -1,0 +1,354 @@
+*{
+margin:0;
+padding:0;
+font-family: 'Open Sans', sans-serif;	
+}
+:root{
+	--NavBarPadding:40px;
+	--NavBarButtonSize:30px;
+	--SideBarWidth:100px;
+	--PageColour:rgba(37,37,40,1);
+	--HeaderColour:rgba(30,30,30,1);
+}
+html{
+	height:100%;
+	width:100%;
+}
+body{
+	background:var(--PageColour);
+	min-height:calc(100% - 130px);
+	width:100%;
+	margin-top:130px;
+}
+Header{
+	overflow: hidden;
+	background:var(--HeaderColour);
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%;
+	height:130px;
+	z-index:5;
+}
+Nav{
+	/*background-image: url("Images/Icons/NavBg.png");*/
+	padding-top:40px;
+	padding-bottom:40px;
+	height:100%;
+	min-width:100%;
+	max-width:100%;
+}
+.NavButtons{
+	float:right;
+	margin-right:5%;
+}
+.Contact{
+	position:absolute;
+	top:20px;
+	left:20px;
+	width:40%;
+}
+.Email{
+	font-size:30px;	
+	color:rgba(255,255,255,1);
+	float:left;
+}
+a.CopyIcon{
+	width:30px;
+	height:30px;
+	float:left;
+	background-image:url("/Images/Icons/CopyDark.svg");
+}
+a.CopyIcon:hover{
+	background-image:url("/Images/Icons/CopyLight.svg");
+}
+.Number{
+	clear:left;
+	font-size:25px;	
+	color:rgba(255,255,255,1);
+}
+a.NavButton{
+	color:rgba(255,255,255,0.7);
+	margin-left:20px;
+	text-decoration:none;
+	font-size:var(--NavBarButtonSize);
+	max-height:var(--NavBarButtonSize);
+}
+a.NavButton:hover{
+	color:rgba(255,255,255,1);	
+}
+a.NavButton:active{
+	color:rgba(200,200,200,1);	
+}
+.MainContainer{
+	min-width:1200px;
+	max-width:1200px;
+	top:150px;
+	margin:20px auto;
+}
+.MainTitle{
+	text-align:center;
+	clear:both;
+	margin:30px auto 30px;
+	font-size:20px;
+	width:100%;
+	padding:0px 30px;
+	color:rgba(255,255,255,1);
+}
+.MainSection{
+	font-size:20px;
+	width:50%;
+	margin-top:30px;
+	padding:0px 30px;
+	padding-bottom:0px;
+	color:rgba(255,255,255,1);
+}
+.MainTitleSection{
+	position:relative;
+	background:rgba(30,30,30,1);
+	text-align:center;
+	clear:both;
+	margin:30px auto 0px;
+	font-size:20px;
+	width:60%;
+	padding:30px;
+	color:rgba(255,255,255,1);
+	font-weight: bold;
+	border-radius:10px;
+	z-index:2;
+}
+.SkillsImg{
+	position:relative;
+	width:100%;
+	z-index:1;
+}
+.LanguagesImg{
+	position:relative;
+	width:50%;
+	margin:0px auto;
+	z-index:1;
+}
+.BackgroundImg{
+	position:absolute;
+	left:0;
+	z-index:0;
+	opacity:0.5;
+}
+.Closer{
+	clear:both;	
+}
+.ModelSection{
+	postion:fixed;
+	bottom:0;
+	right:0;
+	font-size:20px;
+	z-index:3;
+	width:30%;
+	padding:20px;
+	padding-bottom:0px;
+	color:rgba(255,255,255,1);
+}
+.Left{
+	float:left;
+}
+.Right{
+	float:right;
+}
+.VideoContainer {
+	clear:both;
+	border-radius: 30px;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.Video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.RenderMain{
+	width:100%;
+}
+.RenderLink{
+	display:block;
+	float:left;
+	min-width: 80%;
+	max-width: 80%;
+	margin:0%;
+}
+.RenderImg{
+	width:100%;
+	height:100%;
+	vertical-align: middle;
+}
+.modal {
+	display: hidden; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 4; /* Sit on top */
+	margin:0px;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: hidden; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+}
+
+.modal-content {
+	margin: 10px auto;
+	width:80%;
+	height:80%;
+	text-align: center;
+}
+
+#modal-image {
+	float:left;
+	min-width:calc(100% - 228px);
+	max-width:calc(100% - 228px);
+	display: inline-block;
+	border-style: solid;
+	border-width:4px;
+}
+a.IconLinkLeft{
+	background-image: url("Images/Icons/LeftArrowLight.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+	float:left;
+	margin-top:20%;
+	margin-right:10px;
+	width:100px;
+	height:100px;
+}
+.IconLinkLeft:hover{
+	background-image: url("Images/Icons/LeftArrowDark.png");	
+}
+.IconLinkLeft:active{
+	background-image: url("Images/Icons/LeftArrow.png");	
+}
+a.IconLinkRight{
+	background-image: url("Images/Icons/RightArrowLight.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+	float:left;
+	margin-top:20%;
+	margin-left:10px;
+	width:100px;
+	height:100px;
+}
+.IconLinkRight:hover{
+	background-image: url("Images/Icons/RightArrowDark.png");	
+}
+.IconLinkRight:active{
+	background-image: url("Images/Icons/RightArrow.png");	
+}
+a.IconCloseLink{
+	background-image: url("Images/Icons/CloseLight.png");
+	background-repeat: no-repeat;
+	background-size: auto;	
+	postion:relative;
+	top:60px;
+	z-index:6;
+	min-width:50px;
+	max-width:50px;
+	min-height:50px;
+	max-height:50px;
+}
+.IconCloseLink:hover{
+	background-image: url("Images/Icons/CloseDark.png");	
+}
+.IconCloseLink:active{
+	background-image: url("Images/Icons/Close.png");	
+}
+.SideBar{
+	position:absolute;
+	z-index: -1;
+	top:110;
+	background:rgba(50,0,0,1);
+	min-width:var(--SideBarWidth);
+	max-width:var(--SideBarWidth);
+	min-height:calc(100% - 130px);
+	max-height:calc(100% - 130px);
+}
+.ModelTopBar{
+	position:absolute;
+	z-index: 5;
+	top:110;
+	background:rgba(255,255,255,0);
+	min-width:100%;
+	max-width:100%;
+}
+.ModelSideBar{
+	position:absolute;
+	z-index: 2;
+	top:110;
+	background:rgba(255,255,255,0);
+	max-width:220px;
+}
+
+a.Link{
+	margin-top:10px;
+	margin-left:0.9%;
+	opacity:0.8;
+	float:left;
+	width:9%;
+	height:9%;
+}
+a.Link:hover{
+	opacity:0.9;
+}
+a.Link:active{
+	opacity:1;
+}
+
+a.ModelImgLinkVert{
+	z-index:3;
+	margin-top:10px;
+	margin-left:10px;
+	opacity:0.6;
+	float:left;
+	width:100px;
+	height:100px;
+}
+a.ModelImgLinkVert:hover{
+	opacity:0.8;
+}
+a.ModelImgLinkVert:active{
+	opacity:1;
+}
+
+
+.ModelImg{
+	width:100%;
+	height:100%;
+	border-radius: 25%;
+	box-shadow 0px 0px 15px rgba(255,0,0,1);
+}
+.ModelViewer{
+	background-color:var(--PageColour);
+	position:absolute;
+	z-index:1;
+	top:130;
+	left:0;
+	min-width:100%;
+	max-width:100%;
+	min-height:calc(100% - 130px);
+	max-height:calc(100% - 130px);
+}
+footer{
+	margin-top:30px;
+	clear:both;
+	color:rgba(255,255,255,1);
+	text-align:center;
+	font-size:25px;
+	background:var(--HeaderColour);
+	padding-top:30px;
+	padding-bottom:30px;
+	height:40px;
+	min-width:100%;
+	max-width:100%;	
+	z-index:5;
+}
+@media (max-width: 800px) {
+Contact{
+	
+}

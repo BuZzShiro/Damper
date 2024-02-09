@@ -30,6 +30,9 @@ Header{
 	z-index:5;
 	box-shadow: 0 2px 2px -2px rgba(200,200,200,1);
 }
+.Logo(
+	height:130px;
+)
 Nav{
 	/*background-image: url("Images/Icons/NavBg.png");*/
 	padding-top:40px;

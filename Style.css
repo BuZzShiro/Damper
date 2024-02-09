@@ -28,6 +28,7 @@ Header{
 	width: 100%;
 	height:130px;
 	z-index:5;
+	box-shadow: 0 4px 2px -2px gray;
 }
 Nav{
 	/*background-image: url("Images/Icons/NavBg.png");*/

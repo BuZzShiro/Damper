@@ -49,7 +49,7 @@ Nav{
 }
 .Email{
 	font-size:30px;	
-	color:rgba(255,255,255,1);
+	r:rgba(255,255,255,1);
 	float:left;
 }
 a.CopyIcon{
@@ -67,7 +67,7 @@ a.CopyIcon:hover{
 	color:rgba(255,255,255,1);
 }
 a.NavButton{
-	color:rgba(255,255,255,0.7);
+	color:rgba(0,0,0,1);
 	margin-left:20px;
 	text-decoration:none;
 	font-size:var(--NavBarButtonSize);

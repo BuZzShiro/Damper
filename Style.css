@@ -7,8 +7,8 @@ font-family: 'Open Sans', sans-serif;
 	--NavBarPadding:40px;
 	--NavBarButtonSize:30px;
 	--SideBarWidth:100px;
-	--PageColour:rgba(37,37,40,1);
-	--HeaderColour:rgba(30,30,30,1);
+	--PageColour:rgba(255,255,255,1);
+	--HeaderColour:rgba(255,255,255,1);
 }
 html{
 	height:100%;
